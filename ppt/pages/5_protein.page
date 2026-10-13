@@ -1,0 +1,81 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 400, 20]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 04 · 蛋白质
+  - elementId: title
+    elementType: text
+    bounds: [60, 58, 760, 36]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 蛋白质：恢复窗口期的主角
+  - elementId: headrule
+    elementType: shape
+    bounds: [60, 104, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: rule1
+    elementType: text
+    bounds: [60, 130, 400, 70]
+    content:
+      text: |
+        <p><span style="font-size:26px; color:$court;"><strong>1.2–1.6 g/kg/天</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:12.5px; color:$muted;">力量训练与规律打球者的每日蛋白总量</span></p>
+  - elementId: rule2
+    elementType: text
+    bounds: [60, 216, 400, 70]
+    content:
+      text: |
+        <p><span style="font-size:26px; color:$court;"><strong>20–40 g/次</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:12.5px; color:$muted;">单餐蛋白摄入上限，分餐吃比一顿猛吃利用率高</span></p>
+  - elementId: rule3
+    elementType: text
+    bounds: [60, 302, 400, 70]
+    content:
+      text: |
+        <p><span style="font-size:26px; color:$court;"><strong>0.5–2 h</strong></span></p>
+        <p style="margin-top:4px"><span style="font-size:12.5px; color:$muted;">训练后补充碳水+蛋白的恢复窗口</span></p>
+  - elementId: vline
+    elementType: shape
+    bounds: [500, 130, 1, 250]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: example
+    elementType: text
+    bounds: [530, 130, 400, 260]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>换算成食堂语言</strong>（以 75 kg 为例）</p>
+        <p style="margin-top:8px">每天约需 105 g 蛋白质，大致相当于：</p>
+        <p style="margin-top:8px">· 鸡胸肉 400 g，或<br>· 鸡蛋 6 个 + 牛奶 500 ml，或<br>· 鱼虾 300 g + 豆制品一份</p>
+        <p style="margin-top:10px"><span style="font-size:12px; color:$muted;">示例换算，按常见食物蛋白含量估算。</span></p>
+  - elementId: why
+    elementType: text
+    bounds: [60, 404, 840, 80]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>对网球的意义</strong>：网球对上肢爆发力与核心稳定要求高，频繁挥拍产生的微损伤需要蛋白修复；恢复窗口期内碳水与蛋白按约 3:1 搭配，糖原回填和肌肉修复同步进行，第二天训练才不会"带着酸痛上场"。</p>
+  - elementId: footnote
+    elementType: text
+    bounds: [60, 486, 760, 34]
+    content:
+      style: "$small"
+      text: 依据：ACSM/IOC 共识与《运动营养学》教材的常见建议区间。
+  - elementId: pagenum
+    elementType: text
+    bounds: [880, 500, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      wrap: false
+      text: 05

@@ -1,0 +1,61 @@
+version: v2
+title: 挥拍之间：网球专项的运动营养策略
+size: [960, 540]
+theme:
+  colors:
+    bg: "#FAFAF6"
+    ink: "#1C1C19"
+    muted: "#6E6E66"
+    court: "#1E5B3A"
+    lime: "#B7C33A"
+    clay: "#B3502F"
+    line: "#DDD9CF"
+    paper: "#FFFFFF"
+  textStyles:
+    kicker:
+      fontSize: 12
+      color: "$court"
+      bold: true
+      letterSpacing: 3
+    h1:
+      fontSize: 25
+      bold: true
+      color: "$ink"
+      lineHeight: 1.25
+    body:
+      fontSize: 13.5
+      color: "$ink"
+      lineHeight: 1.55
+    small:
+      fontSize: 11
+      color: "$muted"
+      lineHeight: 1.45
+    num:
+      fontSize: 30
+      bold: true
+      color: "$court"
+  tableStyles:
+    default:
+      cellStyle:
+        fontSize: 12.5
+        color: "$ink"
+        lineHeight: 1.4
+        align: [left, middle]
+        border: [null, null, {style: solid, width: 1, color: "$line"}, null]
+      firstRowStyle:
+        fill: {type: solid, color: "$court"}
+        color: "#FFFFFF"
+        bold: true
+        fontSize: 12.5
+        border: [null, null, {style: solid, width: 2, color: "$court"}, null]
+pages:
+  - pages/1_cover.page
+  - pages/2_profile.page
+  - pages/3_energy.page
+  - pages/4_carbs.page
+  - pages/5_protein.page
+  - pages/6_fluid.page
+  - pages/7_timeline.page
+  - pages/8_diet.page
+  - pages/9_myths.page
+  - pages/10_closing.page

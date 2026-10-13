@@ -1,0 +1,78 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 400, 20]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 02 · 能量需求
+  - elementId: title
+    elementType: text
+    bounds: [60, 58, 760, 36]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 先算账：网球人每天要吃够多少
+  - elementId: headrule
+    elementType: shape
+    bounds: [60, 104, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: chart
+    elementType: chart
+    bounds: [60, 130, 470, 320]
+    data:
+      cols:
+        - 场景
+        - 总能量消耗
+      rows:
+        - [静息+日常, 2400]
+        - [训练日, 2900]
+        - [比赛日, 3800]
+    series:
+      - type: bar
+        encode:
+          x: 场景
+          y: 总能量消耗
+        fill: {type: solid, color: "$court"}
+        dataLabels: {show: true, fontSize: 12, color: "$ink"}
+    yAxis:
+      label: {fontSize: 11, color: "$muted"}
+      gridLine: false
+    xAxis:
+      label: {fontSize: 12.5, color: "$ink"}
+    legend: false
+  - elementId: chartnote
+    elementType: text
+    bounds: [60, 456, 470, 40]
+    content:
+      style: "$small"
+      text: 示意估算：以体重约 70 kg 的男大学生为例，随训练量、体重与强度浮动（估算值）。
+  - elementId: vline
+    elementType: shape
+    bounds: [560, 130, 1, 340]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: rules
+    elementType: text
+    bounds: [590, 130, 330, 350]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>三条原则</strong></p>
+        <p style="margin-top:8px">① <strong>摄入 ≈ 消耗</strong>：体重稳定是吃够的最直观指标，长期吃不够，训练质量先崩。</p>
+        <p style="margin-top:10px">② <strong>比赛日额外补</strong>：一场 2 小时单打约多消耗 800–1200 kcal，赛前赛后都要补上。</p>
+        <p style="margin-top:10px">③ <strong>别用节食换体重</strong>：快速降重掉的是肌肉和糖原，直接削弱场上爆发力。</p>
+        <p style="margin-top:14px"><span style="font-size:12px; color:$muted;">来源：ACSM/IOC 运动营养共识声明的常见建议区间。</span></p>
+  - elementId: pagenum
+    elementType: text
+    bounds: [880, 500, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      wrap: false
+      text: 03

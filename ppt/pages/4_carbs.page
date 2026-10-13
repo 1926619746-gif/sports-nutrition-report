@@ -1,0 +1,67 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [60, 34, 400, 20]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 03 · 碳水化合物
+  - elementId: title
+    elementType: text
+    bounds: [60, 58, 760, 36]
+    content:
+      style: "$h1"
+      wrap: false
+      text: 碳水：间歇运动的第一燃料
+  - elementId: headrule
+    elementType: shape
+    bounds: [60, 104, 840, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$line"}
+  - elementId: table
+    elementType: table
+    bounds: [60, 130, 840, 250]
+    columnWidths: [0.14, 0.34, 0.52]
+    rowHeights: [0.2, 0.267, 0.267, 0.266]
+    style: "$default"
+    rows:
+      - - text: 时机
+        - text: 补多少
+        - text: 怎么补
+      - - text: 赛前 2–4 h
+          bold: true
+        - text: 1–4 g/kg 体重
+        - text: 高碳水、低脂、低纤维的正餐，如米饭面条配瘦肉；临赛再吃易胀气的食物是大忌。
+      - - text: 比赛中
+          bold: true
+        - text: 每 20–30 min 30–60 g 糖
+        - text: 运动饮料、香蕉、能量胶；换边时间就是补给窗口，不要等到口渴乏力才补。
+      - - text: 赛后 0–2 h
+          bold: true
+        - text: 1.0–1.2 g/kg/h
+        - text: 头两小时是肌糖原恢复的黄金期，赛后 30 分钟内先补一餐碳水。
+  - elementId: why
+    elementType: text
+    bounds: [60, 404, 840, 76]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>为什么碳水排第一？</strong>高强度间歇运动的输出功率主要由糖原支撑；肌糖原储备不足时，后半场的移动速度和击球力量会肉眼可见地衰减——业余比赛后半段"跑不动"，多半是糖原见底，而不是体力差。</p>
+  - elementId: footnote
+    elementType: text
+    bounds: [60, 486, 760, 34]
+    content:
+      style: "$small"
+      text: 依据：ACSM/IOC 关于运动中碳水补充的共识建议；g/kg 指每千克体重的克数。
+  - elementId: pagenum
+    elementType: text
+    bounds: [880, 500, 40, 20]
+    content:
+      style: "$small"
+      align: [right, top]
+      wrap: false
+      text: 04

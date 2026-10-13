@@ -1,0 +1,57 @@
+pageType: cover
+background:
+  type: solid
+  color: "$court"
+elements:
+  - elementId: ball
+    elementType: shape
+    bounds: [640, -140, 560, 560]
+    shapeName: ellipse
+    fill: {type: solid, color: "$lime"}
+  - elementId: seam1
+    elementType: line
+    bounds: [700, 60, 440, 320]
+    viewBox: [440, 320]
+    points: "0,0 220,60 440,0"
+    curve: smooth
+    border: {style: solid, width: 5, color: "#FAFAF6"}
+  - elementId: seam2
+    elementType: line
+    bounds: [700, 200, 440, 320]
+    viewBox: [440, 320]
+    points: "0,320 220,260 440,320"
+    curve: smooth
+    border: {style: solid, width: 5, color: "#FAFAF6"}
+  - elementId: kicker
+    elementType: text
+    bounds: [70, 148, 500, 24]
+    content:
+      fontSize: 14
+      color: "$lime"
+      bold: true
+      letterSpacing: 4
+      wrap: false
+      text: 运动营养学 · 课程汇报
+  - elementId: title
+    elementType: text
+    bounds: [70, 186, 560, 150]
+    content:
+      align: [left, top]
+      text: |
+        <p><span style="font-size:54px; color:#FFFFFF;"><strong>挥拍之间</strong></span></p>
+        <p style="margin-top:14px"><span style="font-size:28px; color:#DCEBDD;">网球专项的运动营养策略</span></p>
+  - elementId: rule
+    elementType: shape
+    bounds: [70, 356, 120, 3]
+    shapeName: rect
+    fill: {type: solid, color: "$lime"}
+  - elementId: meta
+    elementType: text
+    bounds: [70, 384, 560, 60]
+    content:
+      fontSize: 13.5
+      color: "#C9DCCB"
+      lineHeight: 1.8
+      text: |
+        <p>汇报人：陈明轩（网球专项）</p>
+        <p>四川农业大学 · 2026 年 10 月</p>
